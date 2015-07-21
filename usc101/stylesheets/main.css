@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  text-transform:uppercase;
+}
+
+.vert {
+  vertical-align: middle;
+  width:100%;
+  padding-bottom:4%;
+  text-align:center;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 32px;
+ }
+
+.header .container {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing:2px;
+}
+
+.header .lead {
+  font-size: 18px;
+  float: right;
+}
+
+.header {
+  height: 5%;
+  width: 100%;
+  position: fixed;
+  background: #000 center fixed;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+.seperator {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sincerity {
+  background: rgba(200,50,0,.5) url('../images/pattern.png') repeat center center fixed
+}
