@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="jumbotron seperator"></div>
+    <div class="jumbotron seperator-lg"></div>
 
     <div class="page-header container">
       <h2>Values <small>Project</small></h2>
@@ -28,19 +28,17 @@
         <div id="tbContainer"></div>
       </div>
     </div>
- 
-    <div class="container">
-      <div class="jumbotron vert well">
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
 	
 	<div class="jumbotron seperator"></div>
+	
+	<div id="valContainer"></div>
 
 	<script id="tbTemplate" type="text/x-jQuery-tmpl">
 		<div class="col-xs-6 col-md-3">
 		  <a href="#${title}" class="thumbnail">
-			<img style="width: 100%; height: 180px; display:block; background-color: ${color};">
+			<div class="tb-content" style="background-color: #${color};">
+				<p>${initial}</p>
+			</div>
 		  </a>
 		  <div class="caption">
 			<h4 class="vert">${title}</h4>
@@ -49,29 +47,44 @@
 	</script>
 
 	<script id="valTemplate" type="text/x-jQuery-tmpl">
-		<div class="jumbotron vert" id="${title}" style="background-color: ${color}">
+		<div class="jumbotron vert" id="${title}" style="background-color: #${color}">
 			<div class="container">
 				<h2>${title}</h2>
-				<p>${desc}</p>
+				<p style="color: white;">${desc}</p>
 			</div>
 		</div>  
 	</script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script src="scripts/ie-10-viewport-bug-workaround.js"></script>
 	
 	<script type="text/javascript">
+	
 		var captions = [
-			{ title: "sincerity", color: "#c62828", desc: "" },
-			{ title: "determined", color: "#c62828", desc: "" },
-			{ title: "considerate", color: "#c62828", desc: "" },
-			{ title: "balanced", color: "#c62828", desc: "" },
+			{ title: "sincerity", desc: "Stay true to your words, Steer free of deception and intents of malice" },
+			{ title: "determined", desc: "Anything can happen if you believe in yourself" },
+			{ title: "considerate", desc: "Taking surroundings into consideration" },
+			{ title: "balance", desc: "Bounding for the middle path in life" },
+			{ title: "balanced", desc: "" },
+			{ title: "balanced", desc: "" },
+			{ title: "balanced", desc: "" },
+			{ title: "balanced", desc: "" }
 		];
+		
+		var colors = [
+			"c62828", "2196f3", "2e7d32", "ef6c00", "37474f"
+		];
+		
+		$.each(captions, function( i, v ) {
+			v.color = colors[i % colors.length];
+			v.initial = v.title.charAt(0).toUpperCase();
+		});
 	
 		$('#tbTemplate').tmpl(captions).appendTo($('#tbContainer'));
-		$('#valTemplate').tmpl(captions).appendTo($('body'));
+		$('#valTemplate').tmpl(captions).appendTo($('#valContainer'));
+		
 	</script>
 
     <!-- http://www.bootply.com/render/85746 -->

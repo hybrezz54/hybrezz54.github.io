@@ -1,13 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Uncial+Antiqua);
+@import url(http://fonts.googleapis.com/css?family=Amita:700);
+/* @import url(http://fonts.googleapis.com/css?family=Quantico); */
+
 html, body {
 	height: 100%;
 	width: 100%;
-	font-family: Arial, sans-serif;
+	font-family: 'Antiqua', cursive;
 	background: #424242;
+}
+
+body {
+	position: relative;
 }
 
 h1, h2, h3, h4 {
 	color: #fff;
 	text-transform:uppercase;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 .vert {
@@ -17,12 +41,19 @@ h1, h2, h3, h4 {
 	text-align:center;
 }
 
-h1 {
-	font-size: 80px;
+.tb-content {
+	width: 100%;
+	height: 180px;
+	position: relative;
 }
 
-h2 {
-	font-size: 32px;
+.tb-content p {
+	color: #fff;
+	font-family: 'Amita', cursive;
+	font-size: 84px;
+	text-align: center;
+	padding-top: 38px;
+	text-shadow: 0 0 7px rgba(0,0,0,0.5);
 }
 
 .header .container {
@@ -44,7 +75,7 @@ h2 {
 	top: 0;
 	position: fixed;
 	background: #212121 fixed;
-	z-index: 1;
+	z-index: 100;
 }
 
 .btn {
@@ -55,9 +86,15 @@ h2 {
 	background-color: #bdbdbd;
 }
 
-.seperator {
+.seperator-lg {
 	padding-top: 25px;
 	padding-bottom: 25px;
+	background-color: #9e9e9e;
+}
+
+.seperator {
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background-color: #9e9e9e;
 }
 
