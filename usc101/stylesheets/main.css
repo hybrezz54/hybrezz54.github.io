@@ -50,10 +50,29 @@ a:hover {
 .tb-content p {
 	color: #fff;
 	font-family: 'Amita', cursive;
-	font-size: 84px;
+	font-size: 72px;
 	text-align: center;
 	padding-top: 38px;
 	text-shadow: 0 0 7px rgba(0,0,0,0.5);
+	animation-name: shrink;
+    animation-duration: 0.3s;
+    transform: scale(1);
+}
+
+.tb-content:hover p {
+	animation-name: grow;
+    animation-duration: 0.4s;
+    transform: scale(1.45);
+}
+
+@keyframes shrink {
+	0% { transform: scale(1.45); }
+	100% { transform: scale(1); }
+}
+
+@keyframes grow {
+	0% { transform: scale(1); }
+    100% { transform: scale(1.4); }
 }
 
 .header .container {
