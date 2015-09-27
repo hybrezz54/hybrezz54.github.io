@@ -1,0 +1,34 @@
+/* 	Pinehurst - Homepage specific styles  	author: Substance Inc / findsubstance.com 	browser support: IE8+, latest Chrome, Safari, Firefox, Opera */
+/* -- colors -- */
+/* -- articles -- */
+.article-usopen { background: #fff; }
+
+@media (min-width: 1300px) { .section-history > .hero { position: relative; }
+  .section-history > .hero:after { background: url(/img/figures/clubs.png); bottom: -151px; content: ''; height: 195px; position: absolute; right: 0; width: 332px; } }
+/* -- home features -- */
+.home-feature { background: #383a42 url(/img/ui/bg-squares.png); margin: 40px 0 0; text-align: center; }
+@media (max-width: 480px) { .home-feature { max-width: 330px; margin: 40px auto; }
+  .home-feature:first-child { margin-top: 0; }
+  .home-feature .nav-sub { padding-top: 10px; } }
+
+.home-feature:first-child { margin-top: 0; }
+
+.home-feature > .hd { background: #e9e9e9; margin: 0; padding-bottom: .909em; }
+
+.home-feature-content { border-width: 0; padding: 20px; }
+.home-feature-content h4 a { color: #e0d9c6; }
+
+.home-feature-content > p { font-size: 13px; line-height: 1.3846; /* 18px */ margin: 0 0 15px; display: block; }
+@media (min-width: 769) { .home-feature-content > p { display: block; } }
+
+.home-feature-links { text-align: left; }
+
+@media (min-width: 481px) { .home-features { display: table; margin: 0 0 50px; table-layout: fixed; width: 100%; }
+  .home-feature { border-left: 4px solid #e9e9e9; display: table-cell; margin: 0; width: 33.3333%; }
+  .home-feature .nav-sub { padding-top: 10px; }
+  .home-feature-links { font-size: 16px; margin-right: -20px; } }
+@media (min-width: 769px) { .home-features { position: relative; }
+  .home-features:after { background: url(/img/figures/tee.png); bottom: -52px; content: ''; height: 101px; left: -70px; position: absolute; width: 188px; }
+  .home-feature-links > li { position: relative; z-index: 5; float: left; padding: 0 20px 0 0; width: 50%; } }
+
+/*# sourceMappingURL=home.css.map */

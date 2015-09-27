@@ -1,0 +1,111 @@
+a {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+	width: 100%;
+  font-family: 'Antiqua', cursive;
+}
+
+body {
+  background: #e5e5e5;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  background: #254a64;
+  padding: 5px 0 5px 0;
+  box-shadow: 0px 2px 7px #4c4c4c;
+  margin-bottom: 3% ;
+}
+
+#header-logo {
+  margin: 10px auto 10px auto;
+}
+
+#header-logo img {
+  width: 450px;
+}
+
+#home-img {
+  background-image: url("../img/yt_rainforest_nc.jpg");
+  background-attachment: fixed;
+  color: white;
+  min-height: 400px;
+  margin: 0px auto 8px auto;
+}
+
+#home-img div {
+  /* background: #fff; */
+  padding: 10px 2px 2px 2px;
+}
+
+.vert {
+	vertical-align: middle;
+  height: 100%;
+	width:100%;
+	padding-bottom:4%;
+	text-align:center;
+}
+
+.jumbotron {
+  background: #fff;
+}
+
+nav {
+  padding-top: 16px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 12px;
+}
+
+nav ul li a {
+  padding: .2em 1em;
+  color: #fff;
+  background-color: transparent;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #369;
+}
+
+nav ul ul {
+  background: #e5e5e5;
+  position: absolute;
+  padding: 2px 2px 2px 2px;
+  display: none;
+  box-shadow: 3px 3px 3px #7f7f7f;
+  border: 1px solid #ccc;
+}
+
+nav ul li li {
+  display: block;
+  margin: 2px 2px 2px 2px;
+}
+
+nav ul li li a {
+  color: #000;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+#sect-home {
+  background-image: url(img/yt_rainforest.jpg);
+}
