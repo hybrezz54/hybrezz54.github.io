@@ -42,6 +42,10 @@ header {
   padding: 10px 2px 2px 2px;
 }
 
+main {
+  margin-top: 25%;
+}
+
 .vert {
 	vertical-align: middle;
   height: 100%;
