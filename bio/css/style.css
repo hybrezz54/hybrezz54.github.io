@@ -36,7 +36,7 @@ p {
 }
 
 #header-logo {
-  
+
 }
 
 #header-logo img {
@@ -49,12 +49,6 @@ p {
   background-repeat: round;
   color: white;
   min-height: 400px;
-  margin: 0px auto 8px auto;
-}
-
-#home-img div {
-  /* background: #fff; */
-  padding: 10px 2px 2px 2px;
 }
 
 main {
@@ -111,6 +105,7 @@ nav ul ul {
   display: none;
   box-shadow: 3px 3px 3px #7f7f7f;
   border: 1px solid #ccc;
+  z-index: 10;
 }
 
 nav ul li li {
