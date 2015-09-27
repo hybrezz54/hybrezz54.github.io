@@ -21,6 +21,10 @@ header {
   margin-bottom: 3% ;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  color: #254a64;
+}
+
 #header-logo {
   margin: 10px auto 10px auto;
 }
@@ -44,7 +48,7 @@ header {
 }
 
 main {
-  
+
 }
 
 .vert {
