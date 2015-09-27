@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 
 a {
   text-decoration: none;
@@ -95,6 +95,7 @@ nav ul li a {
   background-color: transparent;
   font-size: 18px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
