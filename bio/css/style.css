@@ -30,8 +30,9 @@ header {
 }
 
 #home-img {
-  background-image: url("../img/yt_rainforest_nc.jpg");
+  background-image: url("../img/temperate_forests_2.jpg");
   background-attachment: fixed;
+  background-repeat: round;
   color: white;
   min-height: 400px;
   margin: 0px auto 8px auto;
