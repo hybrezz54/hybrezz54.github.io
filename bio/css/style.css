@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
 a {
   text-decoration: none;
 }
@@ -5,7 +7,7 @@ a {
 html, body {
   height: 100%;
 	width: 100%;
-  font-family: 'Antiqua', cursive;
+  font-family: 'Lora', serif;
 }
 
 body {
@@ -23,6 +25,14 @@ header {
 
 h1, h2, h3, h4, h5, h6, p {
   color: #254a64;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 24px;
 }
 
 #header-logo {
