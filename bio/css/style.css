@@ -148,6 +148,43 @@ nav ul li:hover ul {
   display: block;
 }
 
+.jumbotron h5 {
+  text-align: center;
+  color: #fff;
+  margin-top: 7%;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.img-banner {
+  background-attachment: fixed;
+  background-repeat: round;
+  color: white;
+  min-height: 400px;
+}
+
+.img-sm-banner {
+  background-attachment: fixed;
+  background-repeat: round;
+  color: white;
+}
+
+#about-img2 {
+  background-image: url("http://www.oldmanscavechalets.com/wp-content/uploads/2013/02/The-Buckeye-Trail1.jpg");
+}
+
+#about-img3 {
+  background-image: url("http://www.culinaryphoto.com/data/photos/158_1grilled_shrimp_006.jpg");
+}
+
+#price-img {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f1/Blue_Oak_bark.jpg");
+}
+
+#price-img2 {
+  background-image: url("http://sites.ipfw.edu/native-trees/images/Hickory,%20Pignut,%20Bark.JPG");
+}
+
 #sect-home {
   background-image: url(img/yt_rainforest.jpg);
 }
@@ -160,16 +197,8 @@ nav ul li:hover ul {
 
 #weather-img {
   background-image: url("https://pinehurstresort.files.wordpress.com/2012/11/img_1546.jpg");
-  background-attachment: fixed;
-  background-repeat: round;
-  color: white;
-  min-height: 400px;
 }
 
 #weather-img2 {
   background-image: url("../img/umbrella_outside.jpg");
-  background-attachment: fixed;
-  background-repeat: round;
-  color: white;
-  min-height: 400px;
 }
