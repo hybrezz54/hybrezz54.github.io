@@ -157,3 +157,19 @@ nav ul li:hover ul {
   margin-left: auto;
   margin-right: auto;
 }
+
+#weather-img {
+  background-image: url("https://pinehurstresort.files.wordpress.com/2012/11/img_1546.jpg");
+  background-attachment: fixed;
+  background-repeat: round;
+  color: white;
+  min-height: 400px;
+}
+
+#weather-img2 {
+  background-image: url("../img/umbrella_outside.jpg");
+  background-attachment: fixed;
+  background-repeat: round;
+  color: white;
+  min-height: 400px;
+}
