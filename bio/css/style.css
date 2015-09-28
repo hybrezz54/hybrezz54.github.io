@@ -51,6 +51,10 @@ p {
   font-size: 24px;
 }
 
+.btn-container {
+  margin-top: 20px;
+}
+
 #header-logo {
 
 }
@@ -60,6 +64,14 @@ p {
 }
 
 #home-img {
+  background-image: url("http://www.cas.vanderbilt.edu/bioimages/biohires/ecoregions/h50401-84164.jpg");
+  background-attachment: fixed;
+  background-repeat: round;
+  color: white;
+  min-height: 400px;
+}
+
+#home-img-two {
   background-image: url("../img/temperate_forests_2.jpg");
   background-attachment: fixed;
   background-repeat: round;
