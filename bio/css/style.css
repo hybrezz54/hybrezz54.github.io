@@ -151,3 +151,9 @@ nav ul li:hover ul {
 #sect-home {
   background-image: url(img/yt_rainforest.jpg);
 }
+
+#vid-squirrel {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
