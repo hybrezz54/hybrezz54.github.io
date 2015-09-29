@@ -41,6 +41,20 @@ h2 {
   font-size: 32px;
 }
 
+.carousel-caption {
+  top: 5px;
+}
+
+.carousel-caption h3 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.carousel-caption p {
+  color: #fff;
+  font-size: 18px;
+}
+
 h4 {
   font-weight: bold;
   margin-top: 8px;
@@ -146,6 +160,17 @@ nav ul li li a {
 
 nav ul li:hover ul {
   display: block;
+}
+
+.carousel {
+  min-height: 700px;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
 }
 
 .jumbotron h5 {
