@@ -79,18 +79,18 @@ p {
 
 #home-img {
   background-image: url("http://www.cas.vanderbilt.edu/bioimages/biohires/ecoregions/h50401-84164.jpg");
-  background-attachment: fixed;
-  background-repeat: round;
-  color: white;
-  min-height: 400px;
 }
 
 #home-img-two {
   background-image: url("../img/temperate_forests_2.jpg");
-  background-attachment: fixed;
-  background-repeat: round;
-  color: white;
-  min-height: 400px;
+}
+
+#golf-img {
+  background-image: url("http://www.homeofgolf.com/sites/default/files/default_images/revised_pn_hole4_ch.jpg");
+}
+
+#hike-img {
+  background-image: url("http://idx-images.cisdata.net/acnt/images/761/AR441761/file_manager//TR_5_Campbell_Drive_Main_1.JPG");
 }
 
 main {
