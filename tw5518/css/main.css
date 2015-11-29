@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    background: #ddd;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+
+.jumbotron {
+  background-color: #a80000;
+  color: #fff;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+#header {
+  background-color: #a80000;
+}
+
+#header li:hover {
+  background-color: #7e0001 !important;
+}
+
+#header a {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+#footer {
+  background-color: #a80000;
+  color: #fff;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+
+#main-banner {
+  background-image: url("../img/robot2.JPG");
+}
+
+.divider-vertical {
+  height: 50px;
+  margin: 5% -10px;
+  border-right: 1px solid #fff;
+}
+
+.img-banner {
+  background-attachment: fixed;
+  background-repeat: round;
+  /*min-height: 400px;*/
+  text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+.navbar-nav {
+  margin: 7.5px -10px;
+}
+
+.navbar-nav .active a {
+  background-color: #7e0001 !important;
+}
+
+.vert {
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
