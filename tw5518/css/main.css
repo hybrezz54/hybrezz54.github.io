@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-    padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 150px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     background: #ddd;
 }
 
@@ -22,7 +22,29 @@ a:hover {
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
+
+    .carousel-inner {
+      height: 300px !important;
+    }
 }
+
+/*@media(max-width:1170px)  {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse {
+        overflow-x: visible !important;
+    }
+
+    .navbar-collapse.in {
+      overflow-y: auto !important;
+    }
+
+    .collapse.in {
+      display: block !important;
+    }
+} */
 
 .jumbotron {
   background-color: #a80000;
@@ -63,12 +85,36 @@ a:hover {
   background-image: url("../img/robot2.jpg");
 }
 
-#navbar li:last-child a {
+#menu-icon {
   padding: 20px 30px;
   display: block;
   background-image: url("../img/ic_menu_white_24dp_1x.png");
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.open #menu-icon {
+  background-color: #7e0001 !important;
+}
+
+#navbar .dropdown-menu {
+  background-color: #a80000;
+}
+
+#navbar .dropdown-menu a {
+  padding: 10px;
+}
+
+#navbar .dropdown-menu a:hover {
+  background-color: #7e0001;
+}
+
+.carousel-inner {
+  height: 100px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 .divider-vertical {
