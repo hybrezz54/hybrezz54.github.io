@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Hamzah Ch"
 theme = "aether"
 copyright = "© 2020 Hamzah Chaudhry"
-publishDir = "docs"
 
 [params]
 brand = "Hamzah Chaudhry"
