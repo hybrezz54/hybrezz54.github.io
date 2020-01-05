@@ -1,0 +1,14 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories - Hamzah Ch</title>
+    <link>http://hamzahch.com/categories/</link>
+    <description>Recent content in Categories on Hamzah Ch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Hamzah Chaudhry</copyright>
+    
+        <atom:link href="http://hamzahch.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
