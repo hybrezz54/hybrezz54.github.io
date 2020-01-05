@@ -1,0 +1,38 @@
+#sudo-enabled VM required to get latest snap of Hugo
+sudo: required
+dist: trusty
+
+# Install the apt prerequisites and hugo
+addons:
+  apt:
+    packages:
+      - python-pygments
+      - snapd
+
+# Clean public folder
+install:
+  - sudo snap install hugo
+  - rm -rf public || exit 0
+
+# Build the website
+# IMPORTANT Hugo options go here!
+script:
+  - git submodule foreach git pull origin master #always pull latest update of theme
+  - /snap/bin/hugo -b https://hamzahch.com -d public
+  - touch public/CNAME
+  - echo "hamzahch.com" >> public/CNAME
+
+after_failure:
+  - echo "Build Failed"
+  - exit 1
+
+#git --force push to master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  target_branch: master #org pages use master not gh-pages
+  on:
+    branch: hugo-source #only deploy from hugo-source branch
+    condition: $TRAVIS_TEST_RESULT = 0
