@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{- partial "head.html" . -}}
+
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-body columns is-centered">
+            {{- partial "header.html" . -}}
+            <div class="column is-three-fifths">
+                <div class="container is-fluid">
+                    <div class="section">
+                        <div class="content">
+                            {{- block "main" . }}{{- end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-foot">
+            {{- partial "footer.html" . -}}
+        </div>
+    </section>
+</body>
+
+</html>
