@@ -13,7 +13,13 @@ body {
 }
 
 .content p {
-    line-height: 1.6;
+    font-size: calc(1em + 0.1vw);
+    line-height: calc(1.5em + 0.15vh);
+}
+
+.is-scrollable {
+    max-height: 70vh;
+    overflow-y: scroll;
 }
 
 .hero-foot {
@@ -33,12 +39,11 @@ body {
 }
 
 .menu a {
-    font-size: 1.2em;
+    font-size: calc(1.15em + 0.1vw);
 }
 
 .navbar-brand a {
     font-size: 1.5em;
-    word-wrap: break-word;
 }
 
 .navbar-brand a:hover {
