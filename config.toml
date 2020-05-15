@@ -6,7 +6,8 @@ copyright = "© 2020 Hamzah Chaudhry"
 googleAnalytics = "UA-166782089-1"
 
 [params]
-    description = "My Site Description"
+    logo = "hamzah chaudhry"
+    description = "Student at UNC-Chapel Hill studying Computer Science and minoring in Entrepreneurship and Statistics"
 
 [[menu.main]]
     name = "blog"
