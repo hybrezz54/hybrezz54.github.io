@@ -1,16 +1,17 @@
 <div class="column is-narrow">
     <div class="container is-fluid has-text-right">
         <aside class="menu">
-            <h1 class="menu-label">
-                Hamzah
-                Chaudhry
-            </h1>
+            <div class="navbar-brand">
+                <a class="navbar-item" href="{{ .Site.BaseURL }}">
+                    hamzah
+                    chaudhry
+                </a>
+            </div>
 
             <ul class="menu-list">
-                <li><a>blog</a></li>
-                <li><a>projects</a></li>
-                <li><a>linkedin</a></li>
-                <li><a>github</a></li>
+                {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
             </ul>
         </aside>
     </div>

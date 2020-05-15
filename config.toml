@@ -3,6 +3,27 @@ languageCode = "en-us"
 title = "Hamzah Chaudhry"
 theme = "manzil"
 copyright = "© 2020 Hamzah Chaudhry"
+googleAnalytics = "UA-166782089-1"
 
 [params]
     description = "My Site Description"
+
+[[menu.main]]
+    name = "blog"
+    url = "/blog/"
+    weight = -4
+
+[[menu.main]]
+    name = "projects"
+    url = "/projects/"
+    weight = -3
+
+[[menu.main]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/hamzah-ch"
+    weight = -2
+
+[[menu.main]]
+    name = "github"
+    url = "https://github.com/hybrezz54"
+    weight = -1

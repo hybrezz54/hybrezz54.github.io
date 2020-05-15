@@ -6,20 +6,11 @@
     <section class="hero is-fullheight">
         <div class="hero-body columns is-centered">
             {{- partial "header.html" . -}}
-            <div class="column is-three-fifths">
-                <div class="container is-fluid">
-                    <div class="section">
-                        <div class="content">
-                            {{- block "main" . }}{{- end }}
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            {{- block "main" . }}{{- end }}
         </div>
 
-        <div class="hero-foot">
-            {{- partial "footer.html" . -}}
-        </div>
+        {{- partial "footer.html" . -}}
     </section>
 </body>
 
