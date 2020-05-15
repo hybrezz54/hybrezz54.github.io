@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="column is-three-fifths">
+    <div class="container is-fluid">
+        <div class="section">
+            <div class="content is-scrollable">
+                <h1>{{ .Title }}</h1>
+                {{ .Content }}
+                {{ range .Pages }}
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

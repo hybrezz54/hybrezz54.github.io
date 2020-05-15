@@ -5,10 +5,12 @@
 <body>
     <section class="hero is-fullheight">
         <div class="hero-body">
-            <div class="columns is-desktop is-centered is-vcentered">
-                {{- partial "header.html" . -}}
+            <div class="container is-fluid">
+                <div class="columns is-desktop is-centered is-vcentered">
+                    {{- partial "header.html" . -}}
 
-                {{- block "main" . }}{{- end }}
+                    {{- block "main" . }}{{- end }}
+                </div>
             </div>
         </div>
 
