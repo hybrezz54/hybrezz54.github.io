@@ -17,9 +17,11 @@ body {
     line-height: calc(1.5em + 0.15vh);
 }
 
-.is-scrollable {
-    max-height: 70vh;
-    overflow-y: scroll;
+@media screen and (min-width:1024px) {
+    .is-scrollable {
+        max-height: 70vh;
+        overflow-y: scroll;
+    }
 }
 
 .hero-foot {
