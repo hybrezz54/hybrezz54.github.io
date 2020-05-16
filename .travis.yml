@@ -18,7 +18,7 @@ install:
 # IMPORTANT Hugo options go here!
 script:
   - git submodule foreach git pull origin master #always pull latest update of theme
-  - /snap/bin/hugo -b https://hamzahch.com -d public
+  - /snap/bin/hugo -b https://hamzahch.com -d public --gc --minify
   - touch public/CNAME
   - echo "hamzahch.com" >> public/CNAME
 

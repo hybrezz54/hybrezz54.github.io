@@ -3,6 +3,11 @@ title: "Lorem Ipsum"
 date: 2020-05-16T13:41:04-04:00
 description: "This is a short description of the page"
 draft: true
+categories:
+  - Web development
+  - Blogging
+images:
+  - /img/2019/fields.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur...
