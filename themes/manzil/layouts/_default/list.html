@@ -5,10 +5,18 @@
         <div class="section">
             <div class="content is-scrollable">
                 <h1>{{ .Title }}</h1>
+
                 {{ .Content }}
-                {{ range .Pages }}
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                {{ end }}
+
+                <div class="tile is-ancestor">
+                    {{ range .Pages }}
+                        <div class="tile is-parent">
+                            <div class="tile is-child box">
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
             </div>
         </div>
     </div>

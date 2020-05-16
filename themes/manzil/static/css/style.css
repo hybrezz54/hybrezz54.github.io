@@ -8,8 +8,12 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.content h1, .content p {
+.content h1, .content p, .content h2, .content h3, .title, .subtitle {
     color: #fff;
+}
+
+.article.title {
+    margin-bottom: 0.25rem !important;
 }
 
 .content p {
@@ -17,11 +21,20 @@ body {
     line-height: calc(1.5em + 0.15vh);
 }
 
+.heading p {
+    margin-bottom: 0 !important;
+}
+
 @media screen and (min-width:1024px) {
+    .has-text-right-desktop {
+        text-align: right !important;
+    }
+
     .is-scrollable {
         min-height: 30vh;
         max-height: 70vh;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 }
 
@@ -51,4 +64,10 @@ body {
 
 .navbar-brand a:hover {
     color: #fff;
+}
+
+@media screen and (max-width:1023px) {
+    .menu li {
+        float: left;
+    }
 }

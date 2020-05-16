@@ -8,6 +8,7 @@ googleAnalytics = "UA-166782089-1"
 [params]
     logo = "hamzah chaudhry"
     description = "Student at UNC-Chapel Hill studying Computer Science and minoring in Entrepreneurship and Statistics"
+    author = "Hamzah Chaudhry"
 
 [[menu.main]]
     name = "blog"
