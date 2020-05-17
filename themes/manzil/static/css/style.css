@@ -19,12 +19,37 @@ body {
 .article.image {
     /* padding-bottom: 1em; */
     margin-left: 0;
-    /* margin-right: 0; */
+    margin-right: 0;
 }
 
 .content p {
     font-size: calc(1em + 0.1vw);
     line-height: calc(1.5em + 0.15vh);
+}
+
+.content a {
+    color: #98c1d9;
+}
+
+.content a:hover {
+    color: #fff;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content ul > li::before {
+    content: "-";
+    text-indent: 0;
+    display: inline-block;
+    width: 0;
+    position: relative;
+    left: -1em;
+}
+
+.box {
+    background-color: #2e282a;
 }
 
 .heading p {
@@ -41,6 +66,7 @@ body {
         max-height: 70vh;
         overflow-y: scroll;
         overflow-x: hidden;
+        padding-right: 2em;
     }
 }
 

@@ -40,23 +40,21 @@
 
             {{ .Content }}
 
-            <div class="columns is-centered">
-                <div class="column max-800px">
-                    <div class="columns is-mobile">
-                        <div class="column has-text-left">
-                            {{ with .PrevInSection }}
-                                <a href="{{ .Permalink }}">< {{ .Title }}</a>
-                            {{ end }}
-                        </div>
+            <section class="section">
+                <div class="columns is-mobile">
+                    <div class="column has-text-left">
+                        {{ with .PrevInSection }}
+                            <a href="{{ .Permalink }}">< {{ .Title }}</a>
+                        {{ end }}
+                    </div>
 
-                        <div class="column has-text-right">
-                            {{ with .NextInSection }}
-                                <a href="{{ .Permalink }}">{{ .Title }} ></a>
-                            {{ end }}
-                        </div>
+                    <div class="column has-text-right">
+                        {{ with .NextInSection }}
+                            <a href="{{ .Permalink }}">{{ .Title }} ></a>
+                        {{ end }}
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </div>
