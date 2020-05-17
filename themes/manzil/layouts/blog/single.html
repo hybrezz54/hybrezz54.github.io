@@ -27,7 +27,7 @@
 
                 <div class="column heading">
                     {{ range .Params.categories }}
-                        <p><a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a></p>
+                        <span class="category"><a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a></span>
                     {{- end }}
                 </div>
             </div>
