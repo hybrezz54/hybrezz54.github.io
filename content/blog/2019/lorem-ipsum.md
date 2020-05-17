@@ -7,7 +7,7 @@ categories:
   - Web development
   - Blogging
 images:
-  - /img/2019/fields.jpg
+  - /img/blog/2019/fields.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur...
