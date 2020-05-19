@@ -66,6 +66,13 @@ body {
         text-align: right !important;
     }
 
+    .container.is-fluid-desktop {
+        max-width: none;
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 100%;
+    }
+
     .is-scrollable {
         min-height: 30vh;
         max-height: 70vh;
