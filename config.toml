@@ -4,6 +4,8 @@ title = "Hamzah Chaudhry"
 theme = "manzil"
 copyright = "© 2020 Hamzah Chaudhry"
 googleAnalytics = "UA-166782089-1"
+paginate = 4
+summaryLength = 40
 
 [params]
     logo = "hamzah chaudhry"

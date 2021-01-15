@@ -6,6 +6,7 @@ body {
     background-color: #2e282a;
     color: #fff;
     font-family: 'Nunito', sans-serif;
+    overflow: hidden;
 }
 
 .content h1, .content p, .content h2, .content h3, .title, .subtitle {
@@ -114,4 +115,32 @@ body {
     .menu li {
         display: inline-block;
     }
+}
+
+/***** PAGINATION STYLES *****/
+ul.pagination-list {
+    list-style: none !important;
+}
+
+ul.pagination-list > li::before {
+    list-style-type: none !important;
+    content: "" !important;
+}
+
+ul.pagination-list > li {
+    list-style-type: none !important;
+}
+
+.pagination-link {
+    height: 2.25em;
+    border: none;
+}
+
+.pagination-link.is-current {
+    background-color: #98c1d9;
+    color: #000;
+}
+
+.pagination-link[disabled] {
+    background-color: transparent;
 }
