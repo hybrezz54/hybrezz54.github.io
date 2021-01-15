@@ -17,7 +17,7 @@ install:
 # Build the website
 # IMPORTANT Hugo options go here!
 script:
-  - git submodule foreach git pull origin master #always pull latest update of theme
+  - git submodule foreach git pull origin main #always pull latest update of theme
   - /snap/bin/hugo -b https://hamzahch.com -d public --gc --minify
   - touch public/CNAME
   - echo "hamzahch.com" >> public/CNAME
@@ -32,7 +32,7 @@ deploy:
   skip_cleanup: true
   local_dir: public
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  target_branch: master #org pages use master not gh-pages
+  target_branch: main #org pages use master not gh-pages
   on:
     branch: hugo-source #only deploy from hugo-source branch
     condition: $TRAVIS_TEST_RESULT = 0
