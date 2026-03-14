@@ -6,9 +6,10 @@ theme = 'hmzc'
 
 [params]
   description = "Personal portfolio and blog of Hamzah Chaudhry, a Computer Science student at UNC–Chapel Hill."
-  LinkedinLink = "https://www.linkedin.com/in/yourusername"
-  GithubLink = "https://github.com/yourusername"
-  XLink = "https://x.com/yourusername"
+  LinkedinLink = "https://www.linkedin.com/in/hamzah-ch"
+  GithubLink = "https://github.com/hybrezz54"
+  XLink = ""
+  CalendlyLink = "https://calendly.com/hamzah-chaudhry54/15-minute-call"
 
 [menus]
   [[menus.main]]
