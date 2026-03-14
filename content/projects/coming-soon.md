@@ -1,10 +1,10 @@
 +++
-title = 'Project Beta'
+title = 'Coming Soon'
 date = 2025-12-02T12:00:00+05:00
 draft = false
 image = "/blogs/ai.webp"
 categories = ["AI"]
-tags = ["Python", "TensorFlow"]
+tags = ["template"]
 summary = "An AI-powered tool for predictive analysis."
 +++
 

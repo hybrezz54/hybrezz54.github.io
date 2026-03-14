@@ -1,4 +1,4 @@
-<div id="about" class="flex flex-col gap-10 sm:gap-16 p-4">
+<div id="about" class="flex flex-col gap-10 sm:gap-16 p-4 mb-10">
     <div class="@container pt-10">
         <div class="flex flex-col gap-6 @[864px]:flex-row-reverse @[864px]:gap-12">
             <!-- <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl @[864px]:w-2/5"
@@ -7,12 +7,14 @@
             </div> -->
             <div class="flex flex-col gap-6 @[864px]:w-full @[864px]:justify-center">
                 <div class="flex flex-col gap-4 text-left">
-                    <h2
+                    <h2 class="text-white text-[22px] font-bold leading-normal tracking-[-0.015em] pt-5">
+                        about me</h2>
+                    <p
                         class="text-gray-200 text-base font-normal leading-normal @[480px]:text-lg @[480px]:font-normal @[480px]:leading-normal">
                         I’m a Computer Science student at UNC–Chapel Hill with minors in Entrepreneurship and Statistics
                         & Analytics. I work across software engineering, solution arcchitecture. and technical strategy.
                         <br>
-                    </h2>
+                    </p>
                 </div>
                 <div class="flex flex-wrap justify-start gap-3 pt-2">
                     {{ if .Site.Params.LinkedinLink }}
@@ -64,7 +66,7 @@
     </div>
     <section class="flex flex-col gap-4">
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pt-5">
-            My Story</h2>
+            my story</h2>
         <p class="text-gray-200 text-base font-normal leading-relaxed">
             My journey in technology began in third grade, when I first picked up How to Use HTML3 by Scott Arpajian.
             That early curiosity sparked a lifelong fascination with building—treating code, systems, and infrastructure
@@ -81,7 +83,7 @@
     </section>
     <section class="flex flex-col gap-6">
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pt-5">
-            My Expertise</h2>
+            my expertise</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div class="bg-gray-800 rounded-lg p-6">
                 <h3 class="text-lg font-bold text-white mb-3">Languages</h3>
@@ -123,7 +125,7 @@
     </section>
     <section class="flex flex-col gap-6">
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pt-5">
-            Beyond the Keyboard</h2>
+            beyond the keyboard</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div class="bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center">
                 <div class="bg-blue-500/20 text-blue-500 rounded-full p-3 mb-4">
@@ -144,7 +146,7 @@
                         <path d="M8 8.5c0-.8.7-2.5 2-3h4c1.3.5 2 2.2 2 3" opacity="0.4"/>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-white mb-1">Building Cars</h3>
+                <h3 class="text-lg font-bold text-white mb-1">Fixing Cars</h3>
                 <p class="text-sm text-gray-300">Reparing and improving the performance of older cars</p>
             </div>
             <div class="bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center">
@@ -161,18 +163,5 @@
                     technology and the world</p>
             </div>
         </div>
-    </section>
-    <section class="text-center bg-gray-800 rounded-lg py-10 px-4 mb-10">
-        <h2 class="text-white text-3xl font-bold mb-2">Let's Connect</h2>
-        <p class="text-gray-300 mb-6 max-w-lg mx-auto">I'm always open to
-            discussing new projects, creative ideas, or opportunities. Feel free to get in touch!</p>
-
-        {{ if .Site.Params.CalendlyLink }}
-            <a href="{{ .Site.Params.CalendlyLink }}"
-                target="_blank" rel="noopener noreferrer"
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-blue-600 text-white text-base font-bold leading-normal tracking-[0.015em] mx-auto hover:bg-opacity-90 transition-opacity">
-                <span class="truncate">Schedule a Call</span>
-            </a>
-        {{ end }}
     </section>
 </div>

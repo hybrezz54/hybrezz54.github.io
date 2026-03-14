@@ -1,40 +1,20 @@
 {{ define "main" }}
-<!-- HeroSection -->
-<div class="@container">
-  <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
-
-    <!-- IMAGE: replaced background-image div with <img> for accessibility -->
-    <div class="w-full @[480px]:min-w-[400px] @[864px]:w-full">
-      <img src="/ai2.webp" alt="Digital world illustration" class="w-full h-auto rounded-lg object-cover aspect-video"
-        loading="lazy">
-    </div>
-
-    <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
-
-      <div class="flex flex-col gap-2 text-left">
-        <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
-          Blog
-        </h1>
-
-        <p class="text-gray-300 text-sm leading-normal @[480px]:text-base">
-          Posts and tidbits
-        </p>
-      </div>
-
-      <!-- CTA button with ARIA role + focus-visible -->
-      <a href="/blog/" role="button" aria-label="Explore all blog posts" class="flex min-w-[84px] lg:max-w-[480px] items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5
-         bg-blue-600 text-white text-sm font-bold tracking-[0.015em] @[480px]:text-base transition-colors
-         hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">
-        <span class="truncate">Explore Posts</span>
-      </a>
-
-
-    </div>
-  </div>
-</div>
-
 
 {{ partial "about-content.html" . }}
+
+<div class="text-center bg-gray-800 rounded-lg py-10 px-4 mb-10">
+  <h2 class="text-white text-3xl font-bold mb-2">Let's Connect</h2>
+  <p class="text-gray-300 mb-6 max-w-lg mx-auto">I'm always open to
+      discussing new projects, creative ideas, or opportunities. Feel free to get in touch!</p>
+
+  {{ if .Site.Params.CalendlyLink }}
+      <a href="{{ .Site.Params.CalendlyLink }}"
+          target="_blank" rel="noopener noreferrer"
+          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-blue-600 text-white text-base font-bold leading-normal tracking-[0.015em] mx-auto hover:bg-opacity-90 transition-opacity">
+          <span class="truncate">Schedule a Call</span>
+      </a>
+  {{ end }}
+</div>
 
 <!-- CTA -->
 <!-- <div class="px-4 my-10">
