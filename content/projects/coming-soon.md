@@ -1,5 +1,5 @@
 +++
-title = 'Coming Soon'
+title = 'Example Project'
 date = 2025-12-02T12:00:00+05:00
 draft = false
 image = "/blogs/ai.webp"
@@ -8,7 +8,7 @@ tags = ["template"]
 summary = "An AI-powered tool for predictive analysis."
 +++
 
-# **Project Beta: An AI-Powered Tool for Predictive Analysis**
+# **Example Project**
 
 ![Project Beta Banner](/blogs/ai.webp)
 
