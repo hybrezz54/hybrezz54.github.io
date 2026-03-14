@@ -1,11 +1,11 @@
 baseURL = '/'
 relativeURLs = true
 languageCode = 'en-us'
-title = 'Hamzah Chaudhry | Personal Blog'
+title = 'Hamzah Chaudhry | Solutions Architect'
 theme = 'hmzc'
 
 [params]
-  description = "Personal portfolio and blog of Hamzah Chaudhry, a Computer Science student at UNC–Chapel Hill."
+  description = "Personal website of Hamzah Chaudhry"
   LinkedinLink = "https://www.linkedin.com/in/hamzah-ch"
   GithubLink = "https://github.com/hybrezz54"
   XLink = ""
@@ -13,17 +13,17 @@ theme = 'hmzc'
 
 [menus]
   [[menus.main]]
-    name = 'About'
+    name = 'about'
     url = '/'
     weight = 10
 
   [[menus.main]]
-    name = 'Blog'
+    name = 'blog'
     pageRef = '/blog'
     weight = 20
 
   [[menus.main]]
-    name = 'Projects'
+    name = 'projects'
     pageRef = '/projects'
     weight = 30
 
