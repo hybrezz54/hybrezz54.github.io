@@ -1,0 +1,157 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-10 md:py-16">
+  <!-- Back Button -->
+  <a href="javascript:history.back()"
+    class="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:-translate-x-1 transition-transform" fill="none"
+      viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+    </svg>
+    Back
+  </a>
+
+  <article class="prose dark:prose-invert max-w-none">
+    <h1 class="text-4xl md:text-5xl font-black tracking-tight text-white mb-4">{{ .Title }}</h1>
+
+    <div class="flex items-center gap-4 text-gray-400 text-sm mb-8 border-b border-gray-800 pb-8">
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format ":date_long" }}
+      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+      {{ if .Params.categories }}
+      <span class="w-1 h-1 bg-gray-600 rounded-full"></span>
+      <div class="flex gap-2">
+        {{ range .Params.categories }}
+        <span class="text-primary">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="markdown-content text-gray-300 leading-relaxed">
+      {{ .Content }}
+    </div>
+
+    <!-- Tags -->
+    {{ if .Params.tags }}
+    <div class="mt-12 pt-8 border-t border-gray-800">
+      <div class="flex flex-wrap gap-2">
+        {{ range .Params.tags }}
+        <a href="{{ " /tags/" | relURL }}{{ . | urlize }}"
+          class="px-3 py-1 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-full text-sm transition-colors">
+          #{{ . }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </article>
+</div>
+
+<style>
+  .markdown-content h1,
+  .markdown-content h2,
+  .markdown-content h3,
+  .markdown-content h4,
+  .markdown-content h5,
+  .markdown-content h6 {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+    line-height: 1.3;
+  }
+
+  .markdown-content h1 {
+    font-size: 2.25em;
+  }
+
+  .markdown-content h2 {
+    font-size: 1.875em;
+  }
+
+  .markdown-content h3 {
+    font-size: 1.5em;
+  }
+
+  .markdown-content h4 {
+    font-size: 1.25em;
+  }
+
+  .markdown-content p {
+    margin-bottom: 1.5em;
+  }
+
+  .markdown-content ul,
+  .markdown-content ol {
+    margin-bottom: 1.5em;
+    padding-left: 1.5em;
+  }
+
+  .markdown-content ul {
+    list-style-type: disc;
+  }
+
+  .markdown-content ol {
+    list-style-type: decimal;
+  }
+
+  .markdown-content li {
+    margin-bottom: 0.5em;
+  }
+
+  .markdown-content a {
+    color: #3b82f6;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .markdown-content a:hover {
+    color: #60a5fa;
+  }
+
+  .markdown-content blockquote {
+    border-left: 4px solid #374151;
+    padding-left: 1em;
+    font-style: italic;
+    color: #9ca3af;
+    margin-bottom: 1.5em;
+  }
+
+  .markdown-content img {
+    border-radius: 0.5rem;
+    margin: 2em 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .markdown-content code {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25em;
+    font-size: 0.875em;
+    font-family: monospace;
+  }
+
+  .markdown-content pre {
+    background-color: #111827;
+    padding: 1em;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin-bottom: 1.5em;
+  }
+
+  .markdown-content pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875em;
+  }
+
+  .markdown-content hr {
+    border-color: #374151;
+    margin: 3em 0;
+  }
+</style>
+{{ end }}

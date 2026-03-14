@@ -1,0 +1,9 @@
+baseURL = '/'
+relativeURLs = true
+languageCode = 'en-US'
+title = 'HZMC | Personal Blog'
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'

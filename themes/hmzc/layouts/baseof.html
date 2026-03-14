@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="{{ site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body class="bg-gray-900 text-white font-display" id="home">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-900/80">
+    {{ partial "header.html" . }}
+  </header>
+  <main class="mx-auto container max-w-[960px]">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+
+</html>

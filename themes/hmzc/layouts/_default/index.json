@@ -1,0 +1,9 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range where .Site.RegularPages "Type" "blogs" -}}
+    {{- $image := .Params.image -}}
+    {{- if $image -}}
+        {{- $image = $image | relURL -}}
+    {{- end -}}
+    {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "content" .Plain "permalink" .Permalink "summary" .Summary "date" .Date "image" $image) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

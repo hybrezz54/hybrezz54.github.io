@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<meta name="description"
+    content="{{ if .IsHome }}{{ site.Params.description }}{{ else }}{{ .Summary | default site.Params.description }}{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Params.description | default site.Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#111827">
+<link rel="icon" href="/favicon.ico">
+<link rel="canonical" href="{{ .Permalink }}">
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}
+<style>
+    @font-face {
+        font-family: 'Nunito';
+        src: url('/fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+        font-weight: 200 1000;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Nunito';
+        src: url('/fonts/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+        font-weight: 200 1000;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    body {
+        font-family: "Nunito", sans-serif;
+    }
+</style>

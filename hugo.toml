@@ -1,0 +1,34 @@
+baseURL = '/'
+relativeURLs = true
+languageCode = 'en-us'
+title = 'Hamzah Chaudhry | Personal Blog'
+theme = 'hmzc'
+
+[params]
+  description = "Personal portfolio and blog of Hamzah Chaudhry, a Computer Science student at UNC–Chapel Hill."
+  LinkedinLink = "https://www.linkedin.com/in/yourusername"
+  GithubLink = "https://github.com/yourusername"
+  XLink = "https://x.com/yourusername"
+
+[menus]
+  [[menus.main]]
+    name = 'About'
+    url = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = '/blog'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/projects'
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "ROBOTS"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
