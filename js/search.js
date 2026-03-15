@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const article = document.createElement('article');
             article.className = 'flex flex-col group bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-300';
 
-            const imageSrc = post.image || 'placeholder-image.jpg';
+            const imageSrc = post.image || '../fields.jpg';
 
             let categoriesHtml = '';
             if (post.categories && post.categories.length > 0) {
