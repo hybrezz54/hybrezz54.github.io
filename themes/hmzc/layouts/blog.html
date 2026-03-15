@@ -61,7 +61,7 @@
             class="flex flex-col group bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <a class="block" href="{{ .Permalink }}">
                 <img class="w-full h-48 object-cover"
-                    src="{{ with .Params.image }}{{ . | relURL }}{{ else }}placeholder-image.jpg{{ end }}"
+                    src="{{ with .Params.image }}{{ . | relURL }}{{ else }}/blogs/fields.jpg{{ end }}"
                     alt="{{ .Title }}" />
             </a>
 
