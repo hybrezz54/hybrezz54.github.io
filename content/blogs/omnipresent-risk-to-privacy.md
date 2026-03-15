@@ -1,11 +1,11 @@
-+++
-title = "An Omnipresent Risk to Our Privacies"
-date = "2020-04-17T19:52:31-04:00"
-draft = false
-categories = ["Technology"]
-tags = ["politics", "pandemic", "2020"]
-image = "/blogs/sec_camera.jpg"
-+++
+---
+title: "An Omnipresent Risk to Our Privacies"
+date: "2020-04-17T19:52:31-04:00"
+draft: false
+categories: ["Technology"]
+tags: ["politics", "pandemic", "2020"]
+image: "/blogs/sec_camera.jpg"
+---
 
 Privacy has become a contentious issue in the age of the Internet and it will be ever-prevalent as technology continues to progress. The COVID-19 pandemic has only shown glimpses of what lengths governments are willing to go to compromise their citizens’ privacy in the face of “national emergency.” At least thirty countries around the world have ramped up surveillance efforts as an attempt to stem the wave of new infections. Governments are faced with a critical choice: figuring out the most effective way to stop people infected with the SARS-COV-2 strain of the coronavirus — the virus responsible for COVID-19 — from infecting others. Such trade-offs risk compromising the privacy of its citizens to an extent which could cause many long-term implications. For instance, telecommunication companies are offering customer data to governments as an aid for better analysis of movement and track the spread of the virus from hotspots. In other cases, countries are tracking down citizens disobeying stay-at-home ordinances and forcing them to install apps on their phone as a deterrent. Facial recognition is gaining larger adoption as a way of reducing direct contact.
 

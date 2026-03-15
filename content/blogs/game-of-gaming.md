@@ -1,11 +1,11 @@
-+++
-title = "The Game of Gaming – Will it Pay Off?"
-date = "2020-04-10T19:47:01-04:00"
-draft = false
-categories = ["Technology"]
-tags = ["economy", "business", "2020"]
-image = "/blogs/ds4.jpg"
-+++
+---
+title: "The Game of Gaming – Will it Pay Off?"
+date: "2020-04-10T19:47:01-04:00"
+draft: false
+categories: ["Technology"]
+tags: ["economy", "business", "2020"]
+image: "/blogs/ds4.jpg"
+---
 
 Gaming’s recent rise to mainstream culture has offered media channels a new source of revenue. Esports and competitive gaming has cultivated an immense following — enough for it to be featured on national TV. With the ongoing COVID-19 pandemic, the entertainment industry has been looking for alternatives to fill the void left by typical programming. Consequently, gaming has been a popular replacement for sports and reality television for both providers and viewers alike. Twitch, a live-streaming platform, reached record numbers for hours steamed and concurrent viewership. Games like League of Legends, Rocket League, and Overwatch feature annual competitions to get players electrified as they follow their favorite professional teams. Now, such games have switched to a remote format to continue earning revenue. Along with premiering esports competitions for the last six years, ESPN has currently partnered with the NBA 2K franchise to create the Players Tournament where NBA players go “head-to-head from the comfort of their homes.” Gaming is the future and seems like it is here to stay.
 

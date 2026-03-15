@@ -1,11 +1,11 @@
-+++
-title = "Virtual Productivity or Virtual Boundaries?"
-date = "2020-04-03T19:41:36-04:00"
-draft = false
-categories = ["Technology"]
-tags = ["pandemic", "2020"]
-image = "/blogs/laptop_tea.jpg"
-+++
+---
+title: "Virtual Productivity or Virtual Boundaries?"
+date: "2020-04-03T19:41:36-04:00"
+draft: false
+categories: ["Technology"]
+tags: ["pandemic", "2020"]
+image: "/blogs/laptop_tea.jpg"
+---
 
 The COVID-19 pandemic has shifted our entire worldview; the activities we are routinely used to — eating out, interacting with coworkers, attending classes — have meanwhile ceased, except for the collective push towards remote working. Businesses and schools alike have enabled their employees and students, respectively, to communicate via online messaging and conferencing platforms. Although some of this alternate mode of communication has already been occuring, the greater push as a consequence of the pandemic might have long-lasting implications on the use of such technology and its effects on the economy.
 

@@ -2,7 +2,7 @@
 title = 'Example Project'
 date = 2025-12-02T12:00:00+05:00
 draft = false
-image = "/blogs/ai.webp"
+image = "projects/ai.webp"
 categories = ["AI"]
 tags = ["template"]
 summary = "An AI-powered tool for predictive analysis."
@@ -10,7 +10,7 @@ summary = "An AI-powered tool for predictive analysis."
 
 # **Example Project**
 
-![Project Beta Banner](/blogs/ai.webp)
+![Project Beta Banner](/projects/ai.webp)
 
 As industries become increasingly data-driven, the ability to predict trends, outcomes, and patterns has transitioned from a competitive advantage to an essential capability. **Project Beta** emerges as a cutting-edge solution in this landscape—an AI-powered tool designed to deliver accurate, scalable, and real-time predictive analysis.
 
