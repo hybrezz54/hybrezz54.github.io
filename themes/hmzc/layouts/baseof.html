@@ -2,20 +2,34 @@
 <html class="scroll-smooth" lang="{{ site.Language.LanguageCode }}"
   dir="{{ or site.Language.LanguageDirection `ltr` }}">
 
-<head>
-  {{ partial "head.html" . }}
-</head>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
 
-<body class="bg-gray-900 text-white font-display" id="home">
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-900/80">
-    {{ partial "header.html" . }}
-  </header>
-  <main class="mx-auto container max-w-[960px]">
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-</body>
+  <body class="bg-gray-900 text-white font-display" id="home">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-900/80">
+      {{ partial "header.html" . }}
+    </header>
+
+    <main class="mx-auto container max-w-[960px]">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+
+    {{ if .Store.Get "hasMermaid" }}
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ 
+        startOnLoad: true,
+        theme: 'dark' 
+      });
+    </script>
+    {{ end }}
+
+  </body>
 
 </html>

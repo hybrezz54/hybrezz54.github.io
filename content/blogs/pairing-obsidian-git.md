@@ -1,5 +1,5 @@
 ---
-title: pairing-obsidian-git
+title: "Supercharging Hugo with Obsidian"
 date: 2026-03-19T18:58:43-0400
 draft: true
 categories:
@@ -7,7 +7,7 @@ categories:
 tags: []
 description: ""
 summary: ""
-image: ""
+image: "/blogs/hugo_obsidian.svg"
 ---
 
 
@@ -20,7 +20,7 @@ flowchart LR
 ```
 
 ### Configuring Git in Obsidian
-The initial setup starts at Obsidian. On desktop, I created a new Obsidian vault and initialized a Git repository in it. I then configured the [Git community plugin](https://github.com/Vinzent03/obsidian-git) and enabled auto pull and auto commit-and-sync after pulling the remote repository and opening the vault in Obsidian. This was rather straightforward to set up and the solution was nicely confined within a single app — Obsidian. However, on iOS, the [plugin](https://github.com/Vinzent03/obsidian-git)has some limitations and I had to integrate another application — [GitSync](https://apps.apple.com/us/app/gitsync/id6744980427) — to get the workflow functional. Configuration steps on desktop and iOS were pretty similar from there. I again created a new vault and used [GitSync](https://apps.apple.com/us/app/gitsync/id6744980427) to initialize and sync into the vault folder.
+The initial setup starts at Obsidian. On desktop, I created a new Obsidian vault and initialized a Git repository in it. I then configured the [Git community plugin](https://github.com/Vinzent03/obsidian-git) and enabled auto pull and auto commit-and-sync after pulling the remote repository and opening the vault in Obsidian. This was rather straightforward to set up and the solution was nicely confined within a single app — Obsidian. However, on iOS, the [plugin](https://github.com/Vinzent03/obsidian-git) has some limitations and I had to integrate another application — [GitSync](https://apps.apple.com/us/app/gitsync/id6744980427) — to get the workflow functional. Configuration steps on desktop and iOS were pretty similar from there. I again created a new vault and used [GitSync](https://apps.apple.com/us/app/gitsync/id6744980427) to initialize and sync into the vault folder.
 
 ### Configuring Templates in Obsidian
 From Obsidian, go to `Settings —> Core Plugins —> Templates` and insert `_templates/` in the `Template Folder Location` field. Then, in `_templates/`, I created Markdown files defining the frontmatter properties for blog posts and project posts as follows:
