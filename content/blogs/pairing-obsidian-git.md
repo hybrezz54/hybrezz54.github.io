@@ -1,17 +1,17 @@
 ---
-title: "Supercharging Hugo with Obsidian"
+title: Supercharging Hugo with Obsidian
 date: 2026-03-19T18:58:43-0400
-draft: true
+draft: false
 categories:
   - Technology
 tags: []
 description: ""
 summary: ""
-image: "/blogs/hugo_obsidian.svg"
+image: /blogs/hugo_obsidian.svg
 ---
 
 
-Updating content on your website can sometimes be difficult, especially if you’re constrained by your deployment model or framework. Fortunately for me, I did not have these constraints for my personal website. I have built my [website](https://hamzahch.com) with Hugo, a static-site generator that uses Markdown files, and deployed it via GitHub Actions on GitHub Pages. Due to the flexible nature of my deployment model, I took this further and implemented a workflow that lets me sync content between my GitHub repository with the Obsidian vault on my devices.
+Updating content on your website can sometimes be difficult, especially if you’re having to do a lot of context-switching between applications. My goal was to make writing posts and deploying to my website feel seamless. I have built my [website](https://hamzahch.com) with Hugo, a static-site generator that uses Markdown files, and deployed it via GitHub Actions on GitHub Pages. Due to the flexible nature of my deployment model, I took this further and implemented a workflow that lets me sync content between my GitHub repository and the Obsidian vault on my devices.
 
 The workflow is as follows:
 ```mermaid
@@ -20,7 +20,7 @@ flowchart LR
 ```
 
 ### Configuring Git in Obsidian
-The initial setup starts at Obsidian. On desktop, I created a new Obsidian vault and initialized a Git repository in it. I then configured the [Git community plugin](https://github.com/Vinzent03/obsidian-git) and enabled auto pull and auto commit-and-sync after pulling the remote repository and opening the vault in Obsidian. This was rather straightforward to set up and the solution was nicely confined within a single app — Obsidian. However, on iOS, the [plugin](https://github.com/Vinzent03/obsidian-git) has some limitations and I had to integrate another application — [GitSync](https://apps.apple.com/us/app/gitsync/id6744980427) — to get the workflow functional. Configuration steps on desktop and iOS were pretty similar from there. I again created a new vault and used [GitSync](https://apps.apple.com/us/app/gitsync/id6744980427) to initialize and sync into the vault folder.
+The initial setup starts at Obsidian. On desktop, I cloned my website repository and configured it as a new Obsidian vault. Then, I configured the [Git community plugin](https://github.com/Vinzent03/obsidian-git) and enabled auto pull and auto commit-and-sync after opening the vault in Obsidian. This was rather straightforward to set up and the solution was nicely confined within a single app — Obsidian. However, on iOS, the [plugin](https://github.com/Vinzent03/obsidian-git) has some limitations and I had to integrate another application — [GitSync](https://apps.apple.com/us/app/gitsync/id6744980427) — to get the workflow functional. Configuration steps on desktop and iOS were pretty similar. I again created a new vault and used [GitSync](https://apps.apple.com/us/app/gitsync/id6744980427) to initialize and sync into the vault folder.
 
 ### Configuring Templates in Obsidian
 From Obsidian, go to `Settings —> Core Plugins —> Templates` and insert `_templates/` in the `Template Folder Location` field. Then, in `_templates/`, I created Markdown files defining the frontmatter properties for blog posts and project posts as follows:
